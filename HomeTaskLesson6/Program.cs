@@ -114,7 +114,7 @@ namespace HomeTaskLesson6
             catch { Console.WriteLine("Что-то пошло не так, повторите попытку"); }
         }
         /// <summary>
-        /// Method to kill process by ID
+        /// Method to kill process by ID 
         /// </summary>
         /// <param name="procesessDictionary">Dictionary all process</param>
         /// <param name="maxLenNameProc"> param to use PadRight</param>
