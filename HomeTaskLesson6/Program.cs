@@ -105,7 +105,7 @@ namespace HomeTaskLesson6
                 Process[] procToKill = Process.GetProcessesByName(userVal);
                 if (procToKill.Length == 1)
                 {
-                    procToKill[0].WaitForExit();
+                    procToKill[0].Kill();
                     Console.WriteLine("Процесс успешно остановлен");
 
                     procesessDictionary.Remove(procToKill[0].Id);
@@ -128,7 +128,7 @@ namespace HomeTaskLesson6
                     try
                     {
                         Process proccToKill = Process.GetProcessById(key);
-                        proccToKill.WaitForExit();
+                        proccToKill.Kill();
                         Console.WriteLine("Процесс успешно остановлен");
                         return;
                     }
